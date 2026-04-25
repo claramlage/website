@@ -223,11 +223,23 @@
 
 /* Publication cards */
 .pub-card {
-  border-left: 4px solid var(--theme-link-color);
+  border-left: 4px solid var(--theme-link-color) !important;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  outline: none;
   padding: 16px 20px;
   margin-bottom: 20px;
   background-color: #f8f8f8;
   border-radius: 0 4px 4px 0;
+}
+
+.pub-card:hover {
+  border-left: 4px solid var(--theme-link-color) !important;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  outline: none;
 }
 
 .pub-card__title {
