@@ -242,6 +242,37 @@
   outline: none;
 }
 
+/* Hide anchorify heading anchors site-wide */
+a.theme-heading-anchor,
+.theme-block h1 > a,
+.theme-block h2 > a,
+.theme-block h3 > a,
+.theme-block h4 > a,
+.theme-block h5 > a,
+.theme-block h6 > a {
+  display: none !important;
+}
+
+/* Remove any hover/focus border or outline on pub cards */
+.pub-card,
+.pub-card:hover,
+.pub-card:focus,
+.pub-card *:hover,
+.pub-card *:focus,
+.pub-card h3,
+.pub-card h3:hover {
+  outline: none !important;
+  border-top: none !important;
+  border-right: none !important;
+  border-bottom: none !important;
+}
+
+.pub-section-title,
+.pub-section-title:hover,
+.pub-section-title:focus {
+  outline: none !important;
+}
+
 .pub-card__title {
   font-size: 17px;
   font-weight: 700;
@@ -319,6 +350,228 @@
 
   html:not([data-theme="light"]) .pub-section-title {
     border-bottom-color: #333;
+  }
+}
+
+/* Talk cards */
+.talk-card {
+  border-left: 4px solid var(--theme-link-color) !important;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  outline: none;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  background-color: #f8f8f8;
+  border-radius: 0 4px 4px 0;
+}
+
+.talk-card:hover {
+  border-left: 4px solid var(--theme-link-color) !important;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  outline: none;
+}
+
+.talk-card__title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0 0 6px 0;
+  color: inherit;
+}
+
+.talk-card__location {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Teaching cards */
+.teach-card {
+  border-left: 4px solid var(--theme-link-color) !important;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  outline: none;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  background-color: #f8f8f8;
+  border-radius: 0 4px 4px 0;
+}
+
+.teach-card:hover {
+  border-left: 4px solid var(--theme-link-color) !important;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  outline: none;
+}
+
+.teach-card__title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0 0 6px 0;
+  color: inherit;
+}
+
+.teach-card__details {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 8px 0;
+  line-height: 1.5;
+}
+
+.teach-card__hours {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #666;
+  margin: 0 0 6px 0;
+}
+
+.teach-card__level {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 2px 10px;
+}
+
+.teach-card__level--master {
+  color: #9b1c23;
+  background-color: #fce8e9;
+  border: 1px solid #9b1c23;
+}
+
+.teach-card__level--engineer {
+  color: #7b5b00;
+  background-color: #fff7e0;
+  border: 1px solid #c49a00;
+}
+
+/* Talk & Teaching cards — dark mode */
+[data-theme="dark"] .talk-card,
+[data-theme="dark"] .teach-card {
+  background-color: #1e1e1e;
+}
+
+[data-theme="dark"] .talk-card__location,
+[data-theme="dark"] .teach-card__details,
+[data-theme="dark"] .teach-card__hours {
+  color: #aaa;
+}
+
+[data-theme="dark"] .teach-card__level--master {
+  color: #e06060;
+  background-color: #2e1a1a;
+  border-color: #8a3030;
+}
+
+[data-theme="dark"] .teach-card__level--engineer {
+  color: #e0b840;
+  background-color: #2e2810;
+  border-color: #8a7020;
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) .talk-card,
+  html:not([data-theme="light"]) .teach-card {
+    background-color: #1e1e1e;
+  }
+
+  html:not([data-theme="light"]) .talk-card__location,
+  html:not([data-theme="light"]) .teach-card__details,
+  html:not([data-theme="light"]) .teach-card__hours {
+    color: #aaa;
+  }
+
+  html:not([data-theme="light"]) .teach-card__level--master {
+    color: #e06060;
+    background-color: #2e1a1a;
+    border-color: #8a3030;
+  }
+
+  html:not([data-theme="light"]) .teach-card__level--engineer {
+    color: #e0b840;
+    background-color: #2e2810;
+    border-color: #8a7020;
+  }
+}
+
+/* Hide heading anchors inside talk and teaching cards */
+.talk-card a.theme-heading-anchor,
+.teach-card a.theme-heading-anchor,
+.talk-card h3 > a,
+.teach-card h3 > a {
+  display: none !important;
+}
+
+.talk-card,
+.talk-card:hover,
+.talk-card:focus,
+.talk-card *:hover,
+.talk-card *:focus,
+.teach-card,
+.teach-card:hover,
+.teach-card:focus,
+.teach-card *:hover,
+.teach-card *:focus {
+  outline: none !important;
+  border-top: none !important;
+  border-right: none !important;
+  border-bottom: none !important;
+}
+
+/* CV page — PDF viewer */
+.cv-toolbar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.cv-download {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--theme-link-color);
+  text-decoration: none;
+  border: 1px solid var(--theme-link-color);
+  border-radius: 4px;
+  padding: 8px 20px;
+}
+
+.cv-download:hover {
+  background-color: var(--theme-link-color);
+  color: #fff;
+}
+
+.cv-viewer {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #f8f8f8;
+}
+
+.cv-viewer object {
+  display: block;
+  width: 100%;
+  height: 800px;
+  border: none;
+}
+
+[data-theme="dark"] .cv-viewer {
+  border-color: #333;
+  background-color: #1e1e1e;
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) .cv-viewer {
+    border-color: #333;
+    background-color: #1e1e1e;
   }
 }
 
