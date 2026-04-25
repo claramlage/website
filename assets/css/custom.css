@@ -76,6 +76,42 @@
   html:not([data-theme="light"]) .theme-site-avatar-picture img {
     border-color: #333;
   }
+
+  html:not([data-theme="light"]) .argyle-sidebar,
+  html:not([data-theme="light"]) .argyle-contact-mobile {
+    color: #e0e0e0;
+  }
+
+  html:not([data-theme="light"]) .theme-contact-social-link-icon svg {
+    fill: #e0e0e0;
+  }
+
+  html:not([data-theme="light"]) .theme-contact-social-link-text a {
+    color: #e0e0e0;
+  }
+
+  html:not([data-theme="light"]) .theme-callout-block {
+    background-color: #1e1e1e !important;
+    color: #e0e0e0;
+  }
+
+  html:not([data-theme="light"]) .theme-callout-block a {
+    color: var(--theme-link-color);
+  }
+
+  html:not([data-theme="light"]) .contact-modal__content {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+  }
+
+  html:not([data-theme="light"]) .theme-content-title {
+    color: #e0e0e0;
+  }
+
+  html:not([data-theme="light"]) .theme-btn {
+    border-color: #555;
+    color: #e0e0e0;
+  }
 }
 
 /* Explicit dark theme toggle */
@@ -123,6 +159,46 @@
 
 [data-theme="dark"] .theme-site-avatar-picture img {
   border-color: #333;
+}
+
+/* Social icons and sidebar */
+[data-theme="dark"] .argyle-sidebar,
+[data-theme="dark"] .argyle-contact-mobile {
+  color: #e0e0e0;
+}
+
+[data-theme="dark"] .theme-contact-social-link-icon svg {
+  fill: #e0e0e0;
+}
+
+[data-theme="dark"] .theme-contact-social-link-text a {
+  color: #e0e0e0;
+}
+
+/* News / callout boxes */
+[data-theme="dark"] .theme-callout-block {
+  background-color: #1e1e1e !important;
+  color: #e0e0e0;
+}
+
+[data-theme="dark"] .theme-callout-block a {
+  color: var(--theme-link-color);
+}
+
+/* Contact modal */
+[data-theme="dark"] .contact-modal__content {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+
+/* Content blocks and cards */
+[data-theme="dark"] .theme-content-title {
+  color: #e0e0e0;
+}
+
+[data-theme="dark"] .theme-btn {
+  border-color: #555;
+  color: #e0e0e0;
 }
 
 /* Theme toggle button */
