@@ -69,10 +69,6 @@
     background-color: #1a1a1a;
   }
 
-  html:not([data-theme="light"]) .argyle-banner {
-    opacity: 0.85;
-  }
-
   html:not([data-theme="light"]) .theme-site-avatar-picture img {
     border-color: #333;
   }
@@ -152,10 +148,6 @@
 
 [data-theme="dark"] .argyle-navlinks2-menu {
   background-color: #1a1a1a;
-}
-
-[data-theme="dark"] .argyle-banner {
-  opacity: 0.85;
 }
 
 [data-theme="dark"] .theme-site-avatar-picture img {
