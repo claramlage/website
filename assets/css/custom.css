@@ -96,17 +96,19 @@
     color: var(--theme-link-color);
   }
 
+  html:not([data-theme="light"]) .theme-btn {
+    color: #e0e0e0;
+    background-color: #2a2a2a;
+    border-color: #555;
+  }
+
   html:not([data-theme="light"]) .contact-modal__content {
     background-color: #1a1a1a;
     color: #e0e0e0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
   }
 
   html:not([data-theme="light"]) .theme-content-title {
-    color: #e0e0e0;
-  }
-
-  html:not([data-theme="light"]) .theme-btn {
-    border-color: #555;
     color: #e0e0e0;
   }
 }
@@ -179,20 +181,17 @@
   color: var(--theme-link-color);
 }
 
-/* Contact modal */
+/* Contact button and modal */
+[data-theme="dark"] .theme-btn {
+  color: #e0e0e0;
+  background-color: #2a2a2a;
+  border-color: #555;
+}
+
 [data-theme="dark"] .contact-modal__content {
   background-color: #1a1a1a;
   color: #e0e0e0;
-}
-
-/* Content blocks and cards */
-[data-theme="dark"] .theme-content-title {
-  color: #e0e0e0;
-}
-
-[data-theme="dark"] .theme-btn {
-  border-color: #555;
-  color: #e0e0e0;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
 }
 
 /* Banner theme swap */
