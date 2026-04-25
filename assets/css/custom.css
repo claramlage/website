@@ -82,8 +82,9 @@
     color: #e0e0e0;
   }
 
-  html:not([data-theme="light"]) .theme-contact-social-link-icon svg {
-    fill: #e0e0e0;
+  html:not([data-theme="light"]) .theme-contact-social-link-icon {
+    color: #e0e0e0;
+    opacity: 0.87;
   }
 
   html:not([data-theme="light"]) .theme-contact-social-link-text a {
@@ -167,8 +168,9 @@
   color: #e0e0e0;
 }
 
-[data-theme="dark"] .theme-contact-social-link-icon svg {
-  fill: #e0e0e0;
+[data-theme="dark"] .theme-contact-social-link-icon {
+  color: #e0e0e0;
+  opacity: 0.87;
 }
 
 [data-theme="dark"] .theme-contact-social-link-text a {
