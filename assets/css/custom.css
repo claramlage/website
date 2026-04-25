@@ -223,7 +223,7 @@
 
 /* Publication cards */
 .pub-card {
-  border-left: 4px solid var(--theme-link-color);
+  border-left: 4px solid #555;
   padding: 16px 20px;
   margin-bottom: 20px;
   background-color: #f8f8f8;
