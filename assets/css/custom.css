@@ -203,6 +203,18 @@
   color: #e0e0e0;
 }
 
+/* Banner theme swap */
+.banner-light { display: block; }
+.banner-dark { display: none; }
+
+[data-theme="dark"] .banner-light { display: none; }
+[data-theme="dark"] .banner-dark { display: block; }
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) .banner-light { display: none; }
+  html:not([data-theme="light"]) .banner-dark { display: block; }
+}
+
 /* Theme toggle button */
 .theme-toggle {
   cursor: pointer;
