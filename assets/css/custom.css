@@ -453,6 +453,28 @@ a.theme-heading-anchor,
   border: 1px solid #c49a00;
 }
 
+.teach-card__download {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--theme-link-color);
+  background-color: transparent;
+  border: 1px solid var(--theme-link-color);
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.teach-card__download:hover {
+  color: #fff;
+  background-color: var(--theme-link-color);
+  text-decoration: none;
+}
+
 /* Talk & Teaching cards — dark mode */
 [data-theme="dark"] .talk-card,
 [data-theme="dark"] .teach-card {
@@ -477,6 +499,16 @@ a.theme-heading-anchor,
   border-color: #8a7020;
 }
 
+[data-theme="dark"] .teach-card__download {
+  color: #e06060;
+  border-color: #e06060;
+}
+
+[data-theme="dark"] .teach-card__download:hover {
+  color: #fff;
+  background-color: #e06060;
+}
+
 @media (prefers-color-scheme: dark) {
   html:not([data-theme="light"]) .talk-card,
   html:not([data-theme="light"]) .teach-card {
@@ -499,6 +531,16 @@ a.theme-heading-anchor,
     color: #e0b840;
     background-color: #2e2810;
     border-color: #8a7020;
+  }
+
+  html:not([data-theme="light"]) .teach-card__download {
+    color: #e06060;
+    border-color: #e06060;
+  }
+
+  html:not([data-theme="light"]) .teach-card__download:hover {
+    color: #fff;
+    background-color: #e06060;
   }
 }
 
