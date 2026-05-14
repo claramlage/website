@@ -472,14 +472,15 @@ a.theme-heading-anchor,
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
   gap: 8px;
+  width: 100%;
 }
 
 .teach-card__download {
   display: inline-flex;
   align-items: center;
   gap: 5px;
+  margin-left: auto;
   padding: 5px 12px;
   font-size: 12px;
   font-weight: 600;
