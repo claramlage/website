@@ -415,6 +415,7 @@ a.theme-heading-anchor,
   margin-bottom: 20px;
   background-color: #f8f8f8;
   border-radius: 0 4px 4px 0;
+  position: relative;
 }
 
 .teach-card:hover {
@@ -469,15 +470,16 @@ a.theme-heading-anchor,
 }
 
 .teach-card__footer {
-  overflow: hidden;
+  /* clearfix for the badge */
 }
 
 .teach-card__download {
-  float: right;
+  position: absolute;
+  right: 20px;
+  bottom: 16px;
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  margin-left: auto;
   padding: 5px 12px;
   font-size: 12px;
   font-weight: 600;
