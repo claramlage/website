@@ -195,15 +195,30 @@
 }
 
 /* Banner theme swap */
-.banner-light { display: block; }
-.banner-dark { display: none; }
+.banner-light {
+  display: block;
+}
 
-[data-theme="dark"] .banner-light { display: none; }
-[data-theme="dark"] .banner-dark { display: block; }
+.banner-dark {
+  display: none;
+}
+
+[data-theme="dark"] .banner-light {
+  display: none;
+}
+
+[data-theme="dark"] .banner-dark {
+  display: block;
+}
 
 @media (prefers-color-scheme: dark) {
-  html:not([data-theme="light"]) .banner-light { display: none; }
-  html:not([data-theme="light"]) .banner-dark { display: block; }
+  html:not([data-theme="light"]) .banner-light {
+    display: none;
+  }
+
+  html:not([data-theme="light"]) .banner-dark {
+    display: block;
+  }
 }
 
 /* Theme toggle button */
@@ -244,12 +259,12 @@
 
 /* Hide anchorify heading anchors site-wide */
 a.theme-heading-anchor,
-.theme-block h1 > a,
-.theme-block h2 > a,
-.theme-block h3 > a,
-.theme-block h4 > a,
-.theme-block h5 > a,
-.theme-block h6 > a {
+.theme-block h1>a,
+.theme-block h2>a,
+.theme-block h3>a,
+.theme-block h4>a,
+.theme-block h5>a,
+.theme-block h6>a {
   display: none !important;
 }
 
@@ -510,6 +525,7 @@ a.theme-heading-anchor,
 }
 
 @media (prefers-color-scheme: dark) {
+
   html:not([data-theme="light"]) .talk-card,
   html:not([data-theme="light"]) .teach-card {
     background-color: #1e1e1e;
@@ -547,8 +563,8 @@ a.theme-heading-anchor,
 /* Hide heading anchors inside talk and teaching cards */
 .talk-card a.theme-heading-anchor,
 .teach-card a.theme-heading-anchor,
-.talk-card h3 > a,
-.teach-card h3 > a {
+.talk-card h3>a,
+.teach-card h3>a {
   display: none !important;
 }
 
