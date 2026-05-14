@@ -468,26 +468,37 @@ a.theme-heading-anchor,
   border: 1px solid #c49a00;
 }
 
+.teach-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
 .teach-card__download {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  margin-top: 10px;
-  padding: 6px 14px;
-  font-size: 13px;
+  gap: 5px;
+  padding: 5px 12px;
+  font-size: 12px;
   font-weight: 600;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
   color: var(--theme-link-color);
   background-color: transparent;
-  border: 1px solid var(--theme-link-color);
-  border-radius: 4px;
+  border: 1.5px solid var(--theme-link-color);
+  border-radius: 6px;
   text-decoration: none;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .teach-card__download:hover {
   color: #fff;
   background-color: var(--theme-link-color);
   text-decoration: none;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
 }
 
 /* Talk & Teaching cards — dark mode */
@@ -522,6 +533,8 @@ a.theme-heading-anchor,
 [data-theme="dark"] .teach-card__download:hover {
   color: #fff;
   background-color: #e06060;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -557,6 +570,8 @@ a.theme-heading-anchor,
   html:not([data-theme="light"]) .teach-card__download:hover {
     color: #fff;
     background-color: #e06060;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   }
 }
 
