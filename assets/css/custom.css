@@ -470,13 +470,14 @@ a.theme-heading-anchor,
 }
 
 .teach-card__footer {
-  /* clearfix for the badge */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .teach-card__download {
-  position: absolute;
-  right: 20px;
-  bottom: 16px;
   display: inline-flex;
   align-items: center;
   gap: 5px;
@@ -491,6 +492,7 @@ a.theme-heading-anchor,
   border-radius: 6px;
   text-decoration: none;
   transition: all 0.2s ease;
+  flex-shrink: 0;
 }
 
 .teach-card__download:hover {
