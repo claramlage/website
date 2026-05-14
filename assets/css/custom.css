@@ -469,14 +469,11 @@ a.theme-heading-anchor,
 }
 
 .teach-card__footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-  width: 100%;
+  overflow: hidden;
 }
 
 .teach-card__download {
+  float: right;
   display: inline-flex;
   align-items: center;
   gap: 5px;
